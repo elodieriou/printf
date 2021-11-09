@@ -13,17 +13,14 @@ int _printf(const char *format, ...)
 		{NULL, NULL}};
 	int i, j, count = 0;
 
-	if (format == NULL)
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
-	if (format[0] == '%' && format[1] == '\0')
-		return (0);
 	va_start(args, format);
 	for (i = 0; format[i]; i++)
 	{
 		if (format[i] != '%')
 		{
-			count += 1;
-			_putchar (format[i]);
+			count += _putchar(format[i]);
 		}
 		else
 		{
