@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	va_list args;
 	format_t list[] = {
 		{"c", print_char}, {"s", print_string}, {"%", print_percent},
-		{NULL, NULL}};
+		{"d", print_number}, {"i", print_number}, {NULL, NULL}};
 	int i, j, count = 0, len = 0;
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
