@@ -22,6 +22,12 @@ int _printf(const char *format, ...)
 		{
 			count += _putchar(format[i]);
 		}
+		else if (format[i + 1] != 'c' && format[i + 1] != 's'
+			 && format[i + 1] != '%')
+		{
+			count += _putchar(format[i + 1]);
+			i++;
+		}
 		else
 		{
 			for (j = 0; list[j].id != NULL; j++)
