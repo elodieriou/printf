@@ -10,8 +10,8 @@ int _printf(const char *format, ...)
 	va_list args;
 	format_t list[] = {
 		{"c", print_char}, {"s", print_string}, {"%", print_percent},
-		{"d", print_number}, {"i", print_number}, {NULL, NULL}};
-	int i, j, count = 0, len = 0;
+		{NULL, NULL}};
+	int i, j, count = 0;
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
@@ -20,18 +20,21 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] != '%')
 		{
-			count += 1;
-			_putchar (format[i]);
+			count += _putchar(format[i]);
+		}
+		else if (format[i + 1] != 'c' && format[i + 1] != 's'
+			 && format[i + 1] != '%')
+		{
+			count += _putchar('%');
+			count += _putchar(format[i + 1]);
+			i++;
 		}
 		else
 		{
 			for (j = 0; list[j].id != NULL; j++)
 			{
 				if (format[i + 1] == *list[j].id)
-				{
-					len = list[j].f(args);
-					count += len;
-				}
+					count += list[j].f(args);
 			}
 			i++;
 		}
