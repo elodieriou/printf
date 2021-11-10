@@ -51,20 +51,22 @@ int print_percent(va_list args)
  */
 int print_number(va_list args)
 {
-	int n = va_arg(args, int);
-	int div = 1, count = 0;
+	long int n = va_arg(args, int), div = 1;
+	int count = 0;
+	unsigned int num;
 
 	if (n < 0)
 	{
 		count += _putchar('-');
 		n *= -1;
 	}
-	while (n / (div * 10) >= 1)
+	num = n;
+	while (num / (div * 10) >= 1)
 		div *= 10;
 	while (div >= 1)
 	{
-		count += _putchar(n / div + '0');
-		n %= div;
+		count += _putchar(num / div + '0');
+		num %= div;
 		div /= 10;
 	}
 	return (count);
