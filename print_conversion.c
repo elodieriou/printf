@@ -43,3 +43,29 @@ int print_percent(va_list args)
 	_putchar ('%');
 	return (1);
 }
+
+/**
+ * print_number - function that print a number
+ * @args: variadic arguments
+ * Return: a number
+ */
+int print_number(va_list args)
+{
+	int n = va_arg(args, int);
+	int div = 1, count = 0;
+
+	if (n < 0)
+	{
+		count += _putchar('-');
+		n *= -1;
+	}
+	while (n / (div * 10) >= 1)
+		div *= 10;
+	while (div >= 1)
+	{
+		count += _putchar(n / div + '0');
+		n %= div;
+		div /= 10;
+	}
+	return (count);
+}
