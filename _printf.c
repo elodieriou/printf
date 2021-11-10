@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	va_list args;
 	format_t list[] = {
 		{"c", print_char}, {"s", print_string}, {"%", print_percent},
-		{NULL, NULL}};
+		{"d", print_number}, {"i", print_number}, {NULL, NULL}};
 	int i, j, count = 0;
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -23,7 +23,8 @@ int _printf(const char *format, ...)
 			count += _putchar(format[i]);
 		}
 		else if (format[i + 1] != 'c' && format[i + 1] != 's'
-			 && format[i + 1] != '%')
+			 && format[i + 1] != '%' && format[i + 1] != 'd'
+			&& format[i + 1] != 'i')
 		{
 			count += _putchar('%');
 			count += _putchar(format[i + 1]);
