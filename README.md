@@ -63,13 +63,9 @@ The function printf is a collection of files.c that when compiled and executed, 
 
 ## How to do
 
-Make some flowharts like pseudo-code before coding. This to clarify what we wants to do.
+Make some flowharts like pseudo-code before coding. This is to clarify what we want to do.
 
-### void print_char(va_list args)
-add image...
-
-### void print_string(va_list args)
-add image...
+![flowchart _printf](./flowcharts_printf.png)
 
 ## How to use
 
