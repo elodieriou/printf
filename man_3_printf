@@ -1,19 +1,65 @@
 .\" Manpage for _printf
 .\" contact 3641@holbertonschool.com to correct errors or typos
-.TH _printf 1 "10 November 2021" "1.0" "_printf man page"
+.TH _printf 3 "10 November 2021" "1.0" "_printf man page"
 .SH NAME
 _printf \- format and print data
 .SH SYNOPSIS
-\fB _printf \fI FORMAT [ARGUMENT]...
+\fB _printf \fI FORMAT [ARGUMENT] ...
 \fB _printf \fI OPTION
 .SH DESCRITION
-\fB _printf :
-\fP The _printf function is use to print some values on the terminal. this function allow the user to print lots of argument in the same display
+.SS Definition :
+
+The _printf function is use to print some values on the terminal. This function allow you to print lots of argument in the same display.
+
+.SS First argument :
+
+In your first argument, you have to put your text in double quote. In this text, you can add some variable within using a percentage and precise your types of values.
+
+.SS Next arguments :
+
+In the next arguments, you have to puts texts or numbers has you defined in your first arguements.
+
+.SH EXAMPLES
+
+    _printf("hello %c\\n", "H")
+    \fB Result : hello H\fP
+    _printf("hello %s\\n", "World")
+    \fB Result : hello World\fP
+    _printf("%d\\n", "0.2")
+    \fB Result: 0.2\fP
+    _printf("%%")
+    \fB Result : %\fP
+    _printf("hello %i\\n", "2")
+    \fB Result : 2\fP
+
 .SH OPTIONS
-Our function doesn't have any option at the moment.
+
+.TS
+allbox tab(|);
+c s s
+c s c
+c s c
+c s c.
+For the first argument
+%c | means input a character
+%s | means input a string of characters
+%d | means input a decimal (base 10) number
+%i | means input a integer in base 10
+.TE
+
 .SH SEE ALSO
+
+\fBSecrets of printf (the real one)\fP
+
+https://www.cypress.com/file/54441/download
 
 .SH BUGS
 
-.SH AUTHOR
-Elodie RIOU & Julien DUFFAY
+No known bugs.
+
+.SH AUTHORS
+Written by Elodie RIOU & Julien DUFFAY
+
+.SH COPYRIGHT
+
+©Holberton School Laval
