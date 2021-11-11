@@ -73,6 +73,7 @@ We have done a flowharts in pseudo-code before coding. This is to clarify how wo
 * `printf_conversion.c` contain functions conversion specifier
 * `_printf.c` function that passing a formatted string with any format specifiers
 * `_putchar.c` function that gets a char parameter with the stdout, the standard output stream
+* `man_3_printf` contain an explanation of our function _printf
 
 ###
 
@@ -114,7 +115,9 @@ To know more about groff, go to the `groff_man`
 
 ## Tools
 
-| ![logo emacs](./pictures/logo_emacs.png) | ![logo drawio](./pictures/logo_drawio.png) | ![logo google doc](./pictures/logo_google_doc.png) |
+| emacs | draw.io | google doc |
+| --- | --- | --- |
+| <p> <img width="50" height="50" src=./pictures/logo_emacs.png> </p> | <p> <img width ="50" height="50" src=./picture/logo_drawio.png)> | <p> <img width="50" height="50" src=./pictures/logo_google_doc.png> |
 
 ## Authors
 
