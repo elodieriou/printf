@@ -2,39 +2,29 @@
 .\" contact 3641@holbertonschool.com to correct errors or typos
 .TH _printf 3 "10 November 2021" "1.0" "_printf man page"
 .SH NAME
-_printf \- format and print data
+_printf \- formatted output conversion
 .SH SYNOPSIS
-\fB _printf \fI FORMAT [ARGUMENT] ...
-\fB _printf \fI OPTION
+\fB #include <main.h>
+\fB #include <stdarg.h>
+
+\fB int _printf(const char *format, ...);
 .SH DESCRITION
-.SS Definition :
 
-The _printf function is use to print some values on the terminal. This function allow you to print lots of argument in the same display.
+.SS Definition:
+The _printf function is use to print some values on the terminal. This function produce output according to a format. _printf is a variadic function, that means a function which take a variable number of arguments.
 
-.SS First argument :
+.SS Format string:
+The format string is a string, beginning and ending with double quotes. This string is composed of some ordinary characters and conversion specifications. Each conversion specifier uses a percent sign with a specifier.
 
-In your first argument, you have to put your text in double quote. In this text, you can add some variable within using a percentage and precise your types of values.
+Example: _printf("Hello, %s\\n", "World"); => "Hello, %s\\n" is the format string.
 
-.SS Next arguments :
+.SS Variable arguments:
+After the format string, the variable arguments must correspond respectively with the conversion specifier in the format string.
 
-In the next arguments, you have to puts texts or numbers has you defined in your first argument.
+Example: _printf("Hello, %s\\n", "World"); => "World" is the argument that correspond with the conversion specifier "%s" int the format string.
 
-.SH EXAMPLES
-
-    _printf("hello %c\\n", "H")
-    \fB Result : hello H\fP
-    _printf("hello %s\\n", "World")
-    \fB Result : hello World\fP
-    _printf("%d\\n", "0.2")
-    \fB Result: 0.2\fP
-    _printf("%%")
-    \fB Result : %\fP
-    _printf("hello %i\\n", "2")
-    \fB Result : 2\fP
-    _printf("%s%s", "Hello", " World")
-    \fB Result : Hello World\fP
-
-.SH OPTIONS
+.SS Conversion specifiers:
+A conversion specifiers is a combination of a percent sign and a character that specifies the type of conversion to be applied. The specifiers and their meangings are:
 
 .TS
 allbox tab(|);
@@ -47,8 +37,27 @@ For the first argument
 %s | print a string of characters
 %% | print a single percent sign (%)
 %d | print a decimal (base 10) number
-%i | print a integer in base 10
+%i | print an integer in base 10
 .TE
+
+.SH RETURN VALUE
+If successful return, _printf function return the number of characters printed (excluding the null byte used to end output to strings).
+If an error appened, _printf function return a negative value (-1).
+
+.SH EXAMPLES
+
+    _printf("Hello %c\\n", 'H')
+    \fB Result : Hello H\fP
+    _printf("Hello %s\\n", "World")
+    \fB Result : Hello World\fP
+    _printf("%d\\n", 0.2)
+    \fB Result: 0.2\fP
+    _printf("%%")
+    \fB Result : %\fP
+    _printf("%i\\n", 2)
+    \fB Result : 2\fP
+    _printf("%s%s", "Hello", " World")
+    \fB Result : Hello World\fP
 
 .SH SEE ALSO
 
@@ -56,11 +65,8 @@ For the first argument
 
 https://www.cypress.com/file/54441/download
 
-.SH BUGS
-
-No known bugs.
-
 .SH AUTHORS
+
 Written by Elodie RIOU & Julien DUFFAY
 
 .SH COPYRIGHT
