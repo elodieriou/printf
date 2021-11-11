@@ -45,6 +45,7 @@ c s c.
 For the first argument
 %c | means input a character
 %s | means input a string of characters
+%% | means input a single %
 %d | means input a decimal (base 10) number
 %i | means input a integer in base 10
 .TE
