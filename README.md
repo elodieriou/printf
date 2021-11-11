@@ -116,14 +116,14 @@ To know more about groff, go to the `man groff`
 ## Tools
 
 | emacs | draw.io | google doc |
-| --- | --- | --- |
+|:---:|:---:|:---:|
 | <img width="50" height="50" src=./pictures/logo_emacs.png> | <img width ="50" height="50" src=./pictures/logo_drawio.png> | <img width="55" height="55" src=./pictures/logo_google_doc.png> |
 
 ## Authors
 
 | Julien DUFFAY | Elodie RIOU |
-| --- | --- |
-|<a href="https://www.linkedin.com/in/julien-duffay-206822a5/"> <img alt="Julien DUFFAY Linkedin" width="40px" src=./pictures/logo_linkedin.png>
+|:---:|:---:|:---:|:---:|
+|<a href="https://www.linkedin.com/in/julien-duffay-206822a5/"> <img alt="Julien DUFFAY Linkedin" width="40px" src=./pictures/logo_linkedin.png> |
  <a href="https://github.com/julien3641"> <img alt="Julien DUFFAY Github" width="40px" src=./pictures/logo_github.png> |
-<a href="https://www.linkedin.com/in/%C3%A9lodie-riou-41a43aa8/"> <img alt="Elodie RIOU Linkedin" width="40px" src=./pictures/logo_linkedin.png> 
+<a href="https://www.linkedin.com/in/%C3%A9lodie-riou-41a43aa8/"> <img alt="Elodie RIOU Linkedin" width="40px" src=./pictures/logo_linkedin.png> |
  <a href="https://github.com/elodieriou"> <img alt="Elodie RIOU Github" width="40px" src=./pictures/logo_github.png> |
