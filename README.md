@@ -117,7 +117,7 @@ To know more about groff, go to the `groff_man`
 
 | emacs | draw.io | google doc |
 | --- | --- | --- |
-| <p> <img width="50" height="50" src=./pictures/logo_emacs.png> </p> | <p> <img width ="50" height="50" src=./picture/logo_drawio.png)> | <p> <img width="50" height="50" src=./pictures/logo_google_doc.png> |
+| <p> <img width="50" height="50" src=./pictures/logo_emacs.png> </p> | <p> <img width ="50" height="50" src=./pictures/logo_drawio.png)> | <p> <img width="50" height="50" src=./pictures/logo_google_doc.png> |
 
 ## Authors
 
