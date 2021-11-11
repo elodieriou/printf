@@ -17,7 +17,7 @@ In your first argument, you have to put your text in double quote. In this text,
 
 .SS Next arguments :
 
-In the next arguments, you have to puts texts or numbers has you defined in your first arguements.
+In the next arguments, you have to puts texts or numbers has you defined in your first argument.
 
 .SH EXAMPLES
 
@@ -31,6 +31,8 @@ In the next arguments, you have to puts texts or numbers has you defined in your
     \fB Result : %\fP
     _printf("hello %i\\n", "2")
     \fB Result : 2\fP
+    _printf("%s%s", "Hello", " World")
+    \fB Result : Hello World\fP
 
 .SH OPTIONS
 
