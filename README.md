@@ -109,7 +109,9 @@ The `groff` is a particular text-formatting language. Groff provides several mac
 
 Almost all Unix man pages use the section progression : NAME, SYNOPSIS, DESCRIPTION, EXAMPLE, OPTIONS, SEE ALSO, BUGS, AUTHORS, and COPYRIGHT.
 
-In order to format a man page and view it on the terminal, use the command: `man ./man_3_printf`
+In order to format a man page and view it on the terminal, use the command: `man ./man_3_printf`:
+
+![man page](./pictures/man_page.png)
 
 To know more about groff, go to the `man groff`
 
