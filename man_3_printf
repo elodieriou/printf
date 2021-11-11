@@ -43,11 +43,11 @@ c s c
 c s c
 c s c.
 For the first argument
-%c | means input a character
-%s | means input a string of characters
-%% | means input a single %
-%d | means input a decimal (base 10) number
-%i | means input a integer in base 10
+%c | print a single character
+%s | print a string of characters
+%% | print a single percent sign (%)
+%d | print a decimal (base 10) number
+%i | print a integer in base 10
 .TE
 
 .SH SEE ALSO
