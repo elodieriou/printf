@@ -6,7 +6,7 @@ It's a team project where we have to create the fuction printf !
 
 Our team, my friend and me (Julien and Elodie, respectively):
 
-![Team project printf](./happy_printf.png)
+![Team project printf](./pictures/happy_printf.png)
 
 ## Tasks (mandatory)
 
@@ -61,11 +61,11 @@ The function printf is a collection of files.c that when compiled and executed, 
 | `%d` | print a *d*ecimal (base 10) number |
 | `%i` | print an *i*nteger in base 10 |
 
-## How to do
+## How it works
 
-Make some flowharts like pseudo-code before coding. This is to clarify what we want to do.
+We have done a flowharts in pseudo-code before coding. This is to clarify how works our _printf function
 
-![flowchart _printf](./flowcharts_printf.png)
+![flowchart _printf](./pictures/flowcharts_printf.png)
 
 ## How to use
 
@@ -111,6 +111,10 @@ Almost all Unix man pages use the section progression : NAME, SYNOPSIS, DESCRIPT
 In order to format a man page and view it on the terminal, use the command: `groff -Tascii -man [name man].man | more`
 
 To know more about groff, go to the `groff_man`
+
+## Tools
+
+| ![logo emacs](./pictures/logo_emacs.png) | ![logo drawio](./pictures/logo_drawio.png) | ![logo google doc](./pictures/logo_google_doc.png) |
 
 ## Authors
 
